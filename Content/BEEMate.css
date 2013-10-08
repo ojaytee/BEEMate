@@ -1,0 +1,380 @@
+body 
+{
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 13px;
+  background-color: #fff;
+  color: rgb(90,90,90);
+  margin: 10px;
+  padding: 0px;
+  
+}
+
+h2 {margin: 0px; padding: 0px 0px 12px 0px; font-size: 18px; color: #222222;}
+
+img {border:none;}
+
+input, textarea
+{
+  font-family:Arial;
+  font-size:12px;
+  color: rgb(107,109,107);
+}
+
+.cb {clear: both;}
+
+.Container
+{
+  width: 100%;
+}
+
+.SubMenuFrame
+{
+  width: 200px;
+  float: left;
+}
+
+.ContentFrame
+{
+  margin-left: 200px;
+}
+
+.Footer
+{
+  border-top: 1px solid #88c3f4;
+  padding-top: 6px;
+}
+
+a.Menu
+{
+  display: block;
+  float: left;
+  text-align: center;
+  height: 31px;
+  padding-top: 14px;
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+  background-image: url('Images/Menu/Menu-Default.png');
+  background-repeat: repeat-x;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+a.Menu:hover
+{
+  background-image: url('Images/Menu/Menu-Over.png');
+  background-repeat: repeat-x;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.MenuSel
+{
+  display: block;
+  float: left;
+  text-align: center;
+  height: 31px;
+  padding-top: 14px;
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+  background-image: url('Images/Menu/Menu-Selected.png');
+  background-repeat: repeat-x;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+a.MenuSel:hover
+{
+  background-image: url('Images/Menu/Menu-Selected.png');
+  background-repeat: repeat-x;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.MenuLeft
+{
+  background: url('Images/Menu/Menu-left.png') no-repeat;
+  width: 2px;
+  height: 45px;
+  float: left;
+}
+
+.MenuRight
+{
+  background: url('Images/Menu/Menu-Right.png') no-repeat;
+  width: 3px;
+  height: 45px;
+  float: left;
+}
+
+.MenuSep
+{
+  background: url('Images/Menu/Menu-Sep.png') no-repeat;
+  width: 2px;
+  height: 45px;
+  float: left;
+}
+
+a.SubMenu
+{
+  font-size: 12px;
+  display: block;
+  float: left;
+  text-align: center;
+  height: 22px;
+  padding-top: 8px;
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(238,238,238);
+  text-shadow: 1px 1px 1px #fff;
+}
+
+a.SubMenu:hover
+{
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(250,250,250);
+}
+
+a.SubMenuSel
+{
+  font-size: 12px;
+  display: block;
+  float: left;
+  text-align: center;
+  height: 22px;
+  padding-top: 8px;
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #c3e0f8;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+a.SubMenuSel:hover
+{
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #c3e0f8;
+}
+
+.SubMenuSep
+{
+  background: url('Images/Menu/Sub-Menu-Sep.png') no-repeat;
+  width: 2px;
+  height: 30px;
+  float: left;
+}
+
+
+.SideMenuTop
+{
+  background: url('Images/Menu/Side-Menu-Top.png') no-repeat;
+  width: 171px;
+  height: 3px;
+}
+
+.SideMenuContent
+{
+  background: url('Images/Menu/Side-Menu-Tile.png') repeat-y;
+  width: 171px;
+  
+}
+
+.SideMenuContentPad
+{ padding: 5px;
+}
+
+.SideMenuBottom
+{
+  background: url('Images/Menu/Side-Menu-Bottom.png') no-repeat;
+  width: 171px;
+  height: 3px;
+}
+
+.BlueSideMenuTop
+{
+  background: url('Images/Menu/Blue-Side-Top.png') no-repeat;
+  width: 171px;
+  height: 3px;
+}
+
+.BlueSideMenuContent
+{
+  background: url('Images/Menu/Side-Menu-Sel.png') repeat-y;
+  width: 171px;  
+}
+
+.BlueSideMenuBottom
+{
+  background: url('Images/Menu/Blue-Side-Bottom.png') no-repeat;
+  width: 171px;
+  height: 3px;
+}
+
+.modalBackground 
+{
+  background-color : #7e7e7e;
+  filter           : alpha(opacity=80);
+  opacity          : 0.80;
+}
+
+.modalHeader
+{
+  background: url('Images/Global/Modal-Header.png') no-repeat;
+  width: 29px;
+  padding-left: 605px;
+  height: 30px;
+}
+
+.modalFooter
+{
+  background: url('Images/Global/Modal-Footer.png') no-repeat;
+  width: 634px;
+  height: 20px;
+}
+
+.modalTile
+{
+  background: url('Images/Global/Modal-Tile.png') repeat-y;
+  width: 634px;
+}
+
+.tableHeading
+{
+  background-image  : url('/Images/Global/TableHeaderTile.png');
+  background-repeat : repeat-x;
+  height : 34px;
+  font-size: 14px;
+  color: White;
+}
+
+.rowHeading
+{
+  background-image  : url('/Images/Global/TableRowTile.png');
+  background-repeat : repeat-x;
+  height : 30px;
+  font-size: 12px;
+  color: rgb(1,53,77);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rowTotal
+{
+  border-bottom: 1px solid Black;
+  border-top: 1px solid Black;
+  color: Black;
+  font-weight: bold;
+  background-color: #eeeeee;
+}
+
+.altRow {background-color: #eeeeee;}
+
+.black {color: Black;}
+
+.BlueWideTop
+{
+  background: url('Images/Global/Blue-Wide-Top.png') no-repeat;
+  width: 400px;
+  height: 3px;
+}
+
+.BlueWideContent
+{
+  background: url('Images/Global/Blue-Wide-Tile.png') repeat-y;
+  width: 400px;
+  
+}
+
+.BlueWideBottom
+{
+  background: url('/Images/Global/Blue-Wide-Bottom.png') no-repeat;
+  width: 400px;
+  height: 3px;
+}
+
+.reports
+{
+  padding : 0px;
+  margin : 0px;
+  height : 25px;
+}
+
+.font12
+{
+  font-size : 12px;
+}
+
+ul.small
+{
+  padding: 2px 0px 0px 10px;
+  margin:  2px 0px 0px 10px;
+  
+}
+
+.CompanyStructure a
+{
+  color: rgb(90,90,90);
+  text-decoration: none; 
+}
+
+.CompanyStructure a:hover
+{
+  color: rgb(0,0,0);
+  text-decoration: underline; 
+}
+
+.FinTb
+{
+  border:none;
+  background-color:transparent;
+  text-align:right;
+}
+
+a.grid
+{
+  color: #01354d;
+  text-decoration: underline;
+}
+
+a.grid:hover
+{
+  color: rgb(0,0,0);
+}
+
+.ReportHeading
+{
+  display:block; 
+  width:950px; 
+  padding:10px 20px; 
+  background-color:#bbbbbb; 
+  font-weight:bold; 
+  font-size:16px; 
+  color:Black
+}
+
+a.def {color: #000000; text-decoration: underline;}
+a.def:hover {color: #5ba6d7;}
+
+#g1, #g2, #g3, #g4, #g5, #g6, #g7 {
+  width:200px; height:160px;
+  display: inline-block;
+}
+
+#SummaryGauge, #SummaryGauge2
+{
+  width:160px; height:120px;
+  display: inline-block;
+}
+
+.GraphBox {width: 236px; height: 180px; float: left;}
+
+.ImportOptions
+{
+  position: absolute; left: 0px; top: 29px; z-index: 10; width: 183px; background-color: #e6e6e6; border: 1px solid #d3d3d3; display: none;
+}
+.ImportOptions a {color: #222222; text-decoration: none;}
+.ImportOptions a:hover {color: #222222; text-decoration: underline;}

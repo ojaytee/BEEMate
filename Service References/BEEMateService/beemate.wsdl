@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthenticationToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthenticationTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuthenticationTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListScoreCardTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListScoreCardTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListScoreCardTypesResult" type="tns:ArrayOfNVLuT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNVLuT">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NVLuT" type="tns:NVLuT" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NVLuT">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListRaces">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRacesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListRacesResult" type="tns:ArrayOfNVLuT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOccupationalLevels">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOccupationalLevelsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOccupationalLevelsResult" type="tns:ArrayOfNVLuT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListDirectorStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListDirectorStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListDirectorStatusResult" type="tns:ArrayOfNVLuT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCitizenship">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCitizenshipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListCitizenshipResult" type="tns:ArrayOfNVLuT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeFunction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeFunctionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmployeeFunctionResult" type="tns:ArrayOfNVLuT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyListAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyListAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyListAllResult" type="tns:ArrayOfCompanyDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCompanyDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CompanyDetails" type="tns:CompanyDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompanyDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhysicalAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyReg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PAYE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactTel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactCell" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="YearEnd" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartYear" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScoreCardType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdminName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdminEmail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CompanySaveDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Details" type="tns:CompanyDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanySaveDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanySaveDetailsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyLoadDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyLoadDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyLoadDetailsResult" type="tns:CompanyDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyDivisionsListAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyDivisionsListAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyDivisionsListAllResult" type="tns:ArrayOfDivisionItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDivisionItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DivisionItem" type="tns:DivisionItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DivisionItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmployeeListAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DivisionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeListAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeListAllResult" type="tns:ArrayOfEmployeeDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployeeDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmployeeDetails" type="tns:EmployeeDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmployeeDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DivisionId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Citizenship" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Race" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Gender" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Disabled" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OccupationalLevel" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CoreFunction" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentlyEmployeed" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DirectorStatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DirectorStartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="AnnualSalary" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobTitle" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmployeeLoad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeLoadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeLoadResult" type="tns:EmployeeDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeSave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Employee" type="tns:EmployeeDetails" />
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeSaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeSaveResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeWorkforceProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthToken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DivisionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeWorkforceProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeWorkforceProfileResult" type="tns:WorkforceProfileDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WorkforceProfileDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TopManMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TopManTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeniorManTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfMidManTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SemiSkilledTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SkilledTechTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnskilledTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TempTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPermanentTotals" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalMaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalMaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalMaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalMaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalFemaleAfrican" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalFemaleColoured" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalFemaleIndian" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalFemaleWhite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalForeignMale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalForeignFemale" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrandTotalTotals" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListScoreCardTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListScoreCardTypes" />
+  </wsdl:message>
+  <wsdl:message name="ListScoreCardTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListScoreCardTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListRacesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListRaces" />
+  </wsdl:message>
+  <wsdl:message name="ListRacesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListRacesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOccupationalLevelsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListOccupationalLevels" />
+  </wsdl:message>
+  <wsdl:message name="ListOccupationalLevelsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListOccupationalLevelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListDirectorStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ListDirectorStatus" />
+  </wsdl:message>
+  <wsdl:message name="ListDirectorStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ListDirectorStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListCitizenshipSoapIn">
+    <wsdl:part name="parameters" element="tns:ListCitizenship" />
+  </wsdl:message>
+  <wsdl:message name="ListCitizenshipSoapOut">
+    <wsdl:part name="parameters" element="tns:ListCitizenshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeFunctionSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmployeeFunction" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeFunctionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmployeeFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompanyListAllSoapIn">
+    <wsdl:part name="parameters" element="tns:CompanyListAll" />
+  </wsdl:message>
+  <wsdl:message name="CompanyListAllSoapOut">
+    <wsdl:part name="parameters" element="tns:CompanyListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompanySaveDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:CompanySaveDetails" />
+  </wsdl:message>
+  <wsdl:message name="CompanySaveDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:CompanySaveDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompanyLoadDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:CompanyLoadDetails" />
+  </wsdl:message>
+  <wsdl:message name="CompanyLoadDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:CompanyLoadDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompanyDivisionsListAllSoapIn">
+    <wsdl:part name="parameters" element="tns:CompanyDivisionsListAll" />
+  </wsdl:message>
+  <wsdl:message name="CompanyDivisionsListAllSoapOut">
+    <wsdl:part name="parameters" element="tns:CompanyDivisionsListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeListAllSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployeeListAll" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeListAllSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployeeListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeLoadSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployeeLoad" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeLoadSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployeeLoadResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeSaveSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployeeSave" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeSaveSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployeeSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeWorkforceProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployeeWorkforceProfile" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeWorkforceProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployeeWorkforceProfileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BEEMateSoap">
+    <wsdl:operation name="GetVersion">
+      <wsdl:input message="tns:GetVersionSoapIn" />
+      <wsdl:output message="tns:GetVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationToken">
+      <wsdl:input message="tns:GetAuthenticationTokenSoapIn" />
+      <wsdl:output message="tns:GetAuthenticationTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListScoreCardTypes">
+      <wsdl:input message="tns:ListScoreCardTypesSoapIn" />
+      <wsdl:output message="tns:ListScoreCardTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRaces">
+      <wsdl:input message="tns:ListRacesSoapIn" />
+      <wsdl:output message="tns:ListRacesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOccupationalLevels">
+      <wsdl:input message="tns:ListOccupationalLevelsSoapIn" />
+      <wsdl:output message="tns:ListOccupationalLevelsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListDirectorStatus">
+      <wsdl:input message="tns:ListDirectorStatusSoapIn" />
+      <wsdl:output message="tns:ListDirectorStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCitizenship">
+      <wsdl:input message="tns:ListCitizenshipSoapIn" />
+      <wsdl:output message="tns:ListCitizenshipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeFunction">
+      <wsdl:input message="tns:ListEmployeeFunctionSoapIn" />
+      <wsdl:output message="tns:ListEmployeeFunctionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CompanyListAll">
+      <wsdl:input message="tns:CompanyListAllSoapIn" />
+      <wsdl:output message="tns:CompanyListAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CompanySaveDetails">
+      <wsdl:input message="tns:CompanySaveDetailsSoapIn" />
+      <wsdl:output message="tns:CompanySaveDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CompanyLoadDetails">
+      <wsdl:input message="tns:CompanyLoadDetailsSoapIn" />
+      <wsdl:output message="tns:CompanyLoadDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CompanyDivisionsListAll">
+      <wsdl:input message="tns:CompanyDivisionsListAllSoapIn" />
+      <wsdl:output message="tns:CompanyDivisionsListAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeListAll">
+      <wsdl:input message="tns:EmployeeListAllSoapIn" />
+      <wsdl:output message="tns:EmployeeListAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeLoad">
+      <wsdl:input message="tns:EmployeeLoadSoapIn" />
+      <wsdl:output message="tns:EmployeeLoadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeSave">
+      <wsdl:input message="tns:EmployeeSaveSoapIn" />
+      <wsdl:output message="tns:EmployeeSaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeWorkforceProfile">
+      <wsdl:input message="tns:EmployeeWorkforceProfileSoapIn" />
+      <wsdl:output message="tns:EmployeeWorkforceProfileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BEEMateSoap" type="tns:BEEMateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVersion">
+      <soap:operation soapAction="http://tempuri.org/GetVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationToken">
+      <soap:operation soapAction="http://tempuri.org/GetAuthenticationToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListScoreCardTypes">
+      <soap:operation soapAction="http://tempuri.org/ListScoreCardTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRaces">
+      <soap:operation soapAction="http://tempuri.org/ListRaces" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOccupationalLevels">
+      <soap:operation soapAction="http://tempuri.org/ListOccupationalLevels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDirectorStatus">
+      <soap:operation soapAction="http://tempuri.org/ListDirectorStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCitizenship">
+      <soap:operation soapAction="http://tempuri.org/ListCitizenship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeFunction">
+      <soap:operation soapAction="http://tempuri.org/ListEmployeeFunction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyListAll">
+      <soap:operation soapAction="http://tempuri.org/CompanyListAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanySaveDetails">
+      <soap:operation soapAction="http://tempuri.org/CompanySaveDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyLoadDetails">
+      <soap:operation soapAction="http://tempuri.org/CompanyLoadDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyDivisionsListAll">
+      <soap:operation soapAction="http://tempuri.org/CompanyDivisionsListAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeListAll">
+      <soap:operation soapAction="http://tempuri.org/EmployeeListAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeLoad">
+      <soap:operation soapAction="http://tempuri.org/EmployeeLoad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeSave">
+      <soap:operation soapAction="http://tempuri.org/EmployeeSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeWorkforceProfile">
+      <soap:operation soapAction="http://tempuri.org/EmployeeWorkforceProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BEEMateSoap12" type="tns:BEEMateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVersion">
+      <soap12:operation soapAction="http://tempuri.org/GetVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationToken">
+      <soap12:operation soapAction="http://tempuri.org/GetAuthenticationToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListScoreCardTypes">
+      <soap12:operation soapAction="http://tempuri.org/ListScoreCardTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRaces">
+      <soap12:operation soapAction="http://tempuri.org/ListRaces" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOccupationalLevels">
+      <soap12:operation soapAction="http://tempuri.org/ListOccupationalLevels" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDirectorStatus">
+      <soap12:operation soapAction="http://tempuri.org/ListDirectorStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCitizenship">
+      <soap12:operation soapAction="http://tempuri.org/ListCitizenship" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeFunction">
+      <soap12:operation soapAction="http://tempuri.org/ListEmployeeFunction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyListAll">
+      <soap12:operation soapAction="http://tempuri.org/CompanyListAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanySaveDetails">
+      <soap12:operation soapAction="http://tempuri.org/CompanySaveDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyLoadDetails">
+      <soap12:operation soapAction="http://tempuri.org/CompanyLoadDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyDivisionsListAll">
+      <soap12:operation soapAction="http://tempuri.org/CompanyDivisionsListAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeListAll">
+      <soap12:operation soapAction="http://tempuri.org/EmployeeListAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeLoad">
+      <soap12:operation soapAction="http://tempuri.org/EmployeeLoad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeSave">
+      <soap12:operation soapAction="http://tempuri.org/EmployeeSave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeWorkforceProfile">
+      <soap12:operation soapAction="http://tempuri.org/EmployeeWorkforceProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BEEMate">
+    <wsdl:port name="BEEMateSoap" binding="tns:BEEMateSoap">
+      <soap:address location="http://www.beemate.co.za/beemate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BEEMateSoap12" binding="tns:BEEMateSoap12">
+      <soap12:address location="http://www.beemate.co.za/beemate.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,142 @@
+﻿@using System.Drawing
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - BEEMate</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/BEEMate.css")
+        @Styles.Render("~/Content/smoke.css")
+        @Styles.Render("~/Content/theme/jquery-ui-1.8.16.custom.css")
+        @Styles.Render("~/Content/theme/ui.selectmenu.css")
+        @Scripts.Render("~/bundles/modernizr")       
+    </head>
+
+    <body>
+        <h1>This is Desktop View</h1>
+        <header>
+            <div style="padding-bottom: 12px; width: 1190px;">
+                <div style="float: left; width: 130px;">
+                    <a id="ctl00_hlHome" href=""><img id="ctl00_imLogo" src="~/Images/BEE-Mate-Logo.png" alt="BEEMate" style="border-width:0px;"></a>
+                </div>
+                <div style="float: left; width: 1060px;">
+        
+                    <div class="float-right">
+                        <section id="login">
+                            @Html.Partial("_LoginPartial")
+                        </section>
+                        <nav>
+                            <ul id="menu">
+                                <li>@Html.ActionLink("Workforce Profile", "Index", "WorkforceProfile")</li>
+                                <li>@Html.ActionLink("Disabled", "Index", "WorkforceProfile", new { disabled = true },null)</li>
+                                <li>@Html.ActionLink("Core Functions", "Index", "WorkforceProfile", new {coreFunction = true },null)</li>
+                                <li>@Html.ActionLink("Support Functions", "Index", "WorkforceProfile", new {coreFunction = false },null)</li>
+                                <li>@Html.ActionLink("Recruitment", "Index", "WorkforceProfile", new {movementType = 1 },null)</li>
+                                <li>@Html.ActionLink("Termination", "Index", "WorkforceProfile", new {movementType = 2 },null)</li>
+                                <li>@Html.ActionLink("Promotion", "Index", "WorkforceProfile", new {movementType = 3 },null)</li>
+                            </ul>
+                        </nav>
+                    </div>
+       
+                </div>
+                <div class="cb"></div>
+            </div>
+        </header>
+        <div id="body">
+            <div class="Container">
+      
+  <div style="width: 1150px;">
+    <div style="float: left; width: 200px;">
+        <div class="SideMenuTop"></div>
+<div class="SideMenuContent">
+  <div class="SideMenuContentPad">
+    <b>Financial Year</b><br>
+      <select name="ddYear"  id="ddYear" class="jqDropDown" style="width: 160px; ">
+          <option value="2012">2012</option>
+          <option selected="selected" value="2013">2013</option>
+      </select>
+  </div>
+</div>
+<div class="SideMenuBottom"></div>
+      <br>
+      <div class="BlueSideMenuTop"></div>
+      <div class="BlueSideMenuContent">
+        <div class="SideMenuContentPad" style="text-align: center; font-size: 14px;text-shadow: 1px 1px 1px #fff;">
+          BEE Score<br>
+          <span style="font-size: 30px;">31.65</span>
+        </div>
+      </div>
+      <div class="BlueSideMenuBottom"></div>
+
+      <br>
+
+      <div class="BlueSideMenuContent">
+        <div class="SideMenuContentPad" style="text-align: center; font-size: 14px;text-shadow: 1px 1px 1px #fff;">
+          BEE Level<br>
+          <span style="font-size: 30px;">8</span>
+        </div>
+      </div>
+      <div class="BlueSideMenuBottom"></div>
+      <br>
+
+      <div class="BlueSideMenuContent">
+        <div class="SideMenuContentPad" style="text-align: center; font-size: 14px;text-shadow: 1px 1px 1px #fff;">
+          Contribution Level<br>
+          <span style="font-size: 30px;">10%</span>
+        </div>
+      </div>
+      <div class="BlueSideMenuBottom"></div>
+
+      <br>
+      <div id="ctl00_ContentPlaceHolder1_Divisions_pnlDivisions">
+	
+  <div class="SideMenuTop"></div>
+  <div class="SideMenuContent">
+    <div class="SideMenuContentPad">
+      <div class="CompanyStructure">
+        <a href="/Default.aspx?Division=0"><b style="color: Black">Acme Labs (Pty) Ltd</b></a><ul class="small"><li><a href="/Default.aspx?Division=9">Chemical Manufacturing</a></li><li><a href="/Default.aspx?Division=10">QIS</a></li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="SideMenuBottom"></div>
+
+</div>
+      <br>
+
+      <input aria-disabled="false" role="button" name="ctl00$ContentPlaceHolder1$btnLogout" value="Logout" id="ctl00_ContentPlaceHolder1_btnLogout" class="jqButton ui-button ui-widget ui-state-default ui-corner-all" style="width:170px;" type="submit">
+    </div>
+    <div style="float: left; width: 950px;">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+    
+    </div>
+    <div class="cb"></div>
+  </div>
+  <script type="text/javascript">
+new JustGage({ id: "g1", value: 15.31, min: 0, max: 20, title: "Ownership", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+new JustGage({ id: "g2", value: 10.11, min: 0, max: 10, title: "Management", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+new JustGage({ id: "g3", value: 3.00, min: 0, max: 15, title: "Employment Equity", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+new JustGage({ id: "g4", value: 3.23, min: 0, max: 15, title: "Skills Development", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+new JustGage({ id: "g5", value: 0.00, min: 0, max: 20, title: "Procurement", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+new JustGage({ id: "g6", value: 0.00, min: 0, max: 15, title: "Enterprise Development", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+new JustGage({ id: "g7", value: 0.00, min: 0, max: 5, title: "Socio-Economic Dev.", label: "", levelColors: ["#ff0000", "#ffff00", "#00c000"] });
+</script>
+
+    </div>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - PRACMate</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

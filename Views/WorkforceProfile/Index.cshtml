@@ -1,0 +1,376 @@
+﻿@model EEMate.BEEMateService.WorkforceProfileDetails
+@{
+    ViewBag.Title = "Workforce Profile";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.PageHeader</h2>
+  
+  <div >   
+    <table style="border-collapse: collapse; border: 3px solid Black; width: 950px" cellpadding="3" cellspacing="0" border="1">
+      <tbody><tr class="tableHeading">
+         <td style="width:200px;" valign="middle"><b>Occupational Levels</b></td>
+         <td style="vertical-align: middle; text-align:center;" colspan="4" valign="middle"><b>Male</b></td>
+         <td style="vertical-align: middle; text-align:center;" colspan="4" valign="middle"><b>Female</b></td>
+         <td style="vertical-align: middle; text-align:center;" colspan="2" valign="middle"><b>Foreign Nationals</b></td>
+         <td valign="middle"><b>Totals</b></td>
+      </tr>
+
+      <tr class="rowHeading">
+        <td></td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">A</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">C</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">I</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">W</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">A</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">C</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">I</td>
+        <td style="vertical-align: middle; text-align:center; width:60px;" valign="top">W</td>
+        <td style="vertical-align: middle; text-align:center; width:90px;" "="" valign="top">Male</td>
+        <td style="vertical-align: middle; text-align:center; width:90px;" "="" valign="top">Female</td>
+        <td style="vertical-align: middle; text-align:center; width:90px;" "="" valign="top"></td>
+      </tr>
+
+      <tr>
+        <td>Top Management</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TopManTotals)
+          </td>
+      </tr>
+
+      <tr>
+        <td>Senior Management</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SeniorManForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+              @Html.DisplayFor(model => model.SeniorManTotals)
+          </td>
+
+      </tr>
+
+      <tr>
+        <td>Professionally qualified and experienced specialists and mid-management</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.ProfMidManForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+              @Html.DisplayFor(model => model.ProfMidManTotals)
+          </td>
+
+      </tr>
+
+      <tr>
+        <td>Skilled technical and academically qualified workers, junior management, supervisors, foremen, and superintendents</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SkilledTechForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+              @Html.DisplayFor(model => model.SkilledTechTotals)
+          </td>
+
+      </tr>
+
+      <tr>
+        <td>Semi-skilled and discretionary decision making</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.SemiSkilledForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+              @Html.DisplayFor(model => model.SemiSkilledTotals)
+          </td>
+
+      </tr>
+
+      <tr>
+        <td>Unskilled and defined decision making</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.UnskilledTotals)
+          </td>
+      </tr>
+
+      <tr class="rowTotal">
+        <td><b>TOTAL PERMANENT</b></td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TotalPermanentTotals)
+          </td>
+		        </tr>
+
+      <tr>
+        <td>Temporary employees</td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.TempTotals)
+          </td>
+		        </tr>
+
+      <tr class="rowTotal">
+        <td><b>GRAND TOTAL</b></td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalMaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalMaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalMaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalMaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalFemaleAfrican)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalFemaleColoured)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalFemaleIndian)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalFemaleWhite)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalForeignMale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalForeignFemale)
+          </td>
+          <td style="vertical-align: middle; text-align:center;" valign="top">
+               @Html.DisplayFor(model => model.GrandTotalTotals)
+          </td>
+		        </tr>
+    </tbody></table>
+     
+    <div style="text-align: right; padding-top: 6px; width: 950px">
+      
+    </div>
+    
+  </div>

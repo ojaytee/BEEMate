@@ -1,0 +1,92 @@
+﻿@using System.Drawing
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - BEEMate</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/BEEMate.css")
+        @Styles.Render("~/Content/smoke.css")
+        @Styles.Render("~/Content/theme/jquery-ui-1.8.16.custom.css")
+        @Styles.Render("~/Content/theme/ui.selectmenu.css")
+        @Scripts.Render("~/bundles/modernizr")       
+    </head>
+
+    <body>
+        <h1>This is Desktop View</h1>
+        <header>
+            <div class="content-wrapper">
+                <div style="padding-bottom: 12px; width: 1190px;">
+      <div style="float: left; width: 130px;">
+        <a id="ctl00_hlHome" href="Default.aspx"><img id="ctl00_imLogo" src="Images/Menu/BEE-Mate-Logo.png" alt="BEEMate" style="border-width:0px;"></a>
+      </div>
+      <div style="float: left; width: 1060px;">
+        
+
+<div>
+  <div class="MenuLeft"></div>
+  <a id="ctl00_MainMenu_hlHome" class="MenuSel" href="Default.aspx" style="display:inline-block;width:60px;">Home</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlEE" class="Menu" href="Employment-Equity/Dashboard.aspx" style="display:inline-block;width:150px;">Employment Equity</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlManagement" class="Menu" href="Management/Dashboard.aspx" style="display:inline-block;width:104px;">Management</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlSD" class="Menu" href="Skills-Development/Dashboard.aspx" style="display:inline-block;width:150px;">Skills Development</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlED" class="Menu" href="Enterprise-Development/Dashboard.aspx" style="display:inline-block;width:180px;">Development Information</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlOwnership" class="Menu" href="Ownership/Dashboard.aspx" style="display:inline-block;width:90px;">Ownership</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlProcurement" class="Menu" href="Procurement/Dashboard.aspx" style="display:inline-block;width:110px;">Procurement</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlReports" class="Menu" href="Reports/Dashboard.aspx" style="display:inline-block;width:80px;">Reports</a>
+  <div class="MenuSep"></div>
+  <a id="ctl00_MainMenu_hlAdmin" class="Menu" href="Admin/Manage-Users.aspx" style="display:inline-block;width:110px;">Administration</a>
+  <div class="MenuRight"></div>
+  <div class="cb"></div>
+</div>
+        
+      </div>
+      <div class="cb"></div>
+    </div>
+                <div class="float-left">
+                    <p class="site-title"><img src= "@Url.Content("../Images/BEE-Mate-Logo.png")" alt="Image" /></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Workforce Profile", "Index", "WorkforceProfile")</li>
+                            <li>@Html.ActionLink("Disabled", "Index", "WorkforceProfile", new { disabled = true },null)</li>
+                            <li>@Html.ActionLink("Core Functions", "Index", "WorkforceProfile", new {coreFunction = true },null)</li>
+                            <li>@Html.ActionLink("Support Functions", "Index", "WorkforceProfile", new {coreFunction = false },null)</li>
+                            <li>@Html.ActionLink("Recruitment", "Index", "WorkforceProfile", new {movementType = 1 },null)</li>
+                            <li>@Html.ActionLink("Termination", "Index", "WorkforceProfile", new {movementType = 2 },null)</li>
+                            <li>@Html.ActionLink("Promotion", "Index", "WorkforceProfile", new {movementType = 3 },null)</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
