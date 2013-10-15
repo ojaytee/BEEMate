@@ -27,3 +27,31 @@ D:\Projects\PracMate\BEEMate\EEMate\obj\Debug\HTML5 MVC4 Responsive Web Applicat
 D:\Projects\PracMate\BEEMate\EEMate\bin\HTML5 MVC4 Responsive Web Application.dll
 D:\Projects\PracMate\BEEMate\EEMate\bin\HTML5 MVC4 Responsive Web Application.pdb
 D:\Projects\PracMate\BEEMate\EEMate\obj\Debug\EEMate.csprojResolveAssemblyReference.cache
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\HTML5 MVC4 Responsive Web Application.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\HTML5 MVC4 Responsive Web Application.pdb
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\Antlr3.Runtime.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\Newtonsoft.Json.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Net.Http.Formatting.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Helpers.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.WebHost.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Mvc.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Optimization.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Providers.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Razor.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Razor.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\WebGrease.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Net.Http.Formatting.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Helpers.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.WebHost.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Mvc.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Razor.xml
+C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\HTML5 MVC4 Responsive Web Application.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\HTML5 MVC4 Responsive Web Application.pdb

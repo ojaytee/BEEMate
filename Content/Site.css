@@ -778,3 +778,8 @@ tr.pager td {
     text-shadow: none;
 }
 
+.TargetEdits {
+    vertical-align: middle; 
+    text-align:center;
+    width: 30px;
+}
