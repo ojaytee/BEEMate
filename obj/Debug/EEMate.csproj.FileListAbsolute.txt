@@ -27,8 +27,6 @@ D:\Projects\PracMate\BEEMate\EEMate\obj\Debug\HTML5 MVC4 Responsive Web Applicat
 D:\Projects\PracMate\BEEMate\EEMate\bin\HTML5 MVC4 Responsive Web Application.dll
 D:\Projects\PracMate\BEEMate\EEMate\bin\HTML5 MVC4 Responsive Web Application.pdb
 D:\Projects\PracMate\BEEMate\EEMate\obj\Debug\EEMate.csprojResolveAssemblyReference.cache
-C:\Users\johnt\Documents\GitHub\BEEMate\bin\HTML5 MVC4 Responsive Web Application.dll
-C:\Users\johnt\Documents\GitHub\BEEMate\bin\HTML5 MVC4 Responsive Web Application.pdb
 C:\Users\johnt\Documents\GitHub\BEEMate\bin\Antlr3.Runtime.dll
 C:\Users\johnt\Documents\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\johnt\Documents\GitHub\BEEMate\bin\Newtonsoft.Json.dll
@@ -53,5 +51,110 @@ C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Mvc.xml
 C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.xml
 C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.xml
 C:\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Razor.xml
-C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\HTML5 MVC4 Responsive Web Application.dll
-C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\HTML5 MVC4 Responsive Web Application.pdb
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\EEMate.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\bin\EEMate.pdb
+C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\EEMate.dll
+C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\EEMate.pdb
+C:\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\EEMate.csprojResolveAssemblyReference.cache
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\EEMate.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\EEMate.pdb
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\Antlr3.Runtime.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\EntityFramework.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\EntityFramework.SqlServer.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\Newtonsoft.Json.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Net.Http.Formatting.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Helpers.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.WebHost.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Mvc.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Optimization.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Providers.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Razor.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Razor.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\WebGrease.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\EntityFramework.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\EntityFramework.SqlServer.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Net.Http.Formatting.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Helpers.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Http.WebHost.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.Mvc.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\System.Web.WebPages.Razor.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.xml
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\EEMate.csprojResolveAssemblyReference.cache
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\EEMate.dll
+C:\Older Files\Windows.old\Users\johnt\Documents\GitHub\BEEMate\obj\Debug\EEMate.pdb
+D:\GitHub\BEEMate\bin\EEMate.dll
+D:\GitHub\BEEMate\bin\EEMate.pdb
+D:\GitHub\BEEMate\bin\Antlr3.Runtime.dll
+D:\GitHub\BEEMate\bin\EntityFramework.dll
+D:\GitHub\BEEMate\bin\EntityFramework.SqlServer.dll
+D:\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\BEEMate\bin\Newtonsoft.Json.dll
+D:\GitHub\BEEMate\bin\System.Net.Http.Formatting.dll
+D:\GitHub\BEEMate\bin\System.Web.Helpers.dll
+D:\GitHub\BEEMate\bin\System.Web.Http.dll
+D:\GitHub\BEEMate\bin\System.Web.Http.WebHost.dll
+D:\GitHub\BEEMate\bin\System.Web.Mvc.dll
+D:\GitHub\BEEMate\bin\System.Web.Optimization.dll
+D:\GitHub\BEEMate\bin\System.Web.Providers.dll
+D:\GitHub\BEEMate\bin\System.Web.Razor.dll
+D:\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\BEEMate\bin\System.Web.WebPages.dll
+D:\GitHub\BEEMate\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\BEEMate\bin\WebGrease.dll
+D:\GitHub\BEEMate\bin\EntityFramework.xml
+D:\GitHub\BEEMate\bin\EntityFramework.SqlServer.xml
+D:\GitHub\BEEMate\bin\System.Net.Http.Formatting.xml
+D:\GitHub\BEEMate\bin\System.Web.Helpers.xml
+D:\GitHub\BEEMate\bin\System.Web.Http.xml
+D:\GitHub\BEEMate\bin\System.Web.Http.WebHost.xml
+D:\GitHub\BEEMate\bin\System.Web.Mvc.xml
+D:\GitHub\BEEMate\bin\System.Web.WebPages.xml
+D:\GitHub\BEEMate\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\BEEMate\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\BEEMate\bin\Microsoft.Web.Infrastructure.xml
+D:\GitHub\BEEMate\obj\Debug\EEMate.csprojResolveAssemblyReference.cache
+D:\GitHub\BEEMate\obj\Debug\EEMate.dll
+D:\GitHub\BEEMate\obj\Debug\EEMate.pdb
+D:\GitHub\BEEMate\bin\EEMate.dll.config
+D:\GitHub\BEEMate\bin\Microsoft.Data.Edm.dll
+D:\GitHub\BEEMate\bin\Microsoft.Data.OData.dll
+D:\GitHub\BEEMate\bin\System.Spatial.dll
+D:\GitHub\BEEMate\bin\System.Web.Http.OData.dll
+D:\GitHub\BEEMate\bin\Microsoft.Data.Edm.xml
+D:\GitHub\BEEMate\bin\Microsoft.Data.OData.xml
+D:\GitHub\BEEMate\bin\System.Spatial.xml
+D:\GitHub\BEEMate\bin\System.Web.Http.OData.xml
+D:\GitHub\BEEMate\bin\de\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\es\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\it\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\GitHub\BEEMate\bin\de\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\es\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\fr\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\it\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\ja\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\ko\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\ru\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\GitHub\BEEMate\bin\de\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\es\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\fr\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\it\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\ja\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\ko\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\ru\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\zh-Hans\System.Spatial.resources.dll
+D:\GitHub\BEEMate\bin\zh-Hant\System.Spatial.resources.dll

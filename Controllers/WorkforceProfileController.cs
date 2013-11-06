@@ -20,7 +20,7 @@ namespace EEMate.Controllers
             var employeeWorkforceProfile = new WorkforceProfileDetails();
             if (disabled.HasValue || coreFunction.HasValue)
             {
-                var employees = service.EmployeeListAll(service.GetAuthenticationToken("john@beemate.co.za", "Bee1234"), 1, 9, 2012);
+                var employees = service.EmployeeListAll(service.GetAuthenticationToken("john@beemate.co.za", "Bee1234"), 1, 0, 2012);
 
                 employeeWorkforceProfile = WorkForceProfile.GenerateEmployeeWorkforceProfile(employees,disabled, coreFunction);
                 ViewBag.PageHeader += string.Format(" - {0}",
@@ -30,7 +30,7 @@ namespace EEMate.Controllers
             }
             else if (movementType.HasValue)
             {
-                var employees = service.EmployeeListAll(service.GetAuthenticationToken("john@beemate.co.za", "Bee1234"), 1, 9, 2012);
+                var employees = service.EmployeeListAll(service.GetAuthenticationToken("john@beemate.co.za", "Bee1234"), 1, 0, 2012);
 
                 employeeWorkforceProfile = WorkForceProfile.GenerateEmployeeWorkforceProfile(employees, disabled, coreFunction, movementType);
 
@@ -52,7 +52,7 @@ namespace EEMate.Controllers
 
             else
             {
-            employeeWorkforceProfile = service.EmployeeWorkforceProfile(service.GetAuthenticationToken("john@beemate.co.za", "Bee1234"), 1, 9, 2012);
+            employeeWorkforceProfile = service.EmployeeWorkforceProfile(service.GetAuthenticationToken("john@beemate.co.za", "Bee1234"), 1, 0, 2012);
             }
             return View(employeeWorkforceProfile);
         }
